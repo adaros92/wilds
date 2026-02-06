@@ -1,0 +1,18 @@
+---
+import PhotoCard from "./PhotoCard.astro";
+import photos from "../data/photos.json";
+---
+
+<section>
+  <div class="photo-grid">
+    {
+      photos.map((photo, index) => (
+        <PhotoCard
+          thumbnail={photo.thumbnail}
+          alt={photo.alt}
+          index={index}
+        />
+      ))
+    }
+  </div>
+</section>
