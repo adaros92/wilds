@@ -3,16 +3,32 @@
     "id": "1",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.jpeg",
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.jpeg",
-    "title": "Daisy",
-    "alt": "My dog Daisy",
+    "title": "My dog Daisy playing in the snow",
+    "alt": "My dog Daisy playing in the snow",
     "tags": ["dogs"]
   },
   {
     "id": "2",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.jpeg",
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.jpeg",
-    "title": "Great Blue Heron",
+    "title": "A great blue standing by the water",
     "alt": "A great blue heron",
+    "tags": ["birds", "wildlife"]
+  },
+  {
+    "id": "3",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.jpeg",
+    "title": "A curious cardinal looking through the pine needles",
+    "alt": "A curious cardinal looking through the pine needles",
+    "tags": ["birds", "wildlife"]
+  },
+  {
+    "id": "4",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.jpeg",
+    "title": "Snow geese in the Skagit Valley",
+    "alt": "Snow geese in the Skagit Valley",
     "tags": ["birds", "wildlife"]
   }
 ]
