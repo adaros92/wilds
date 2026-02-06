@@ -1,0 +1,19 @@
+---
+interface Props {
+  thumbnail: string;
+  alt: string;
+  index: number;
+}
+
+const { thumbnail, alt, index } = Astro.props;
+---
+
+<button
+  class="photo-grid-item cursor-pointer border-0 bg-transparent p-0"
+  data-lightbox-trigger
+  data-index={index}
+  type="button"
+  aria-label={alt}
+>
+  <img src={thumbnail} alt={alt} loading="lazy" decoding="async" />
+</button>
