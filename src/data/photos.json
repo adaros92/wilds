@@ -295,5 +295,32 @@
     "alt": "Singapore roses in bloom",
     "tags": ["flowers", "nature"],
     "section": "nature"
+  },
+  {
+    "id": "34",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/34.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/34.avif",
+    "title": "The Puget Sound at twilight",
+    "alt": "The Puget Sound at twilight",
+    "tags": ["travel"],
+    "section": "travel"
+  },
+  {
+    "id": "35",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/35.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/35.avif",
+    "title": "Fall on the Snoqualmie River",
+    "alt": "Fall on the Snoqualmie River",
+    "tags": ["travel"],
+    "section": "travel"
+  },
+  {
+    "id": "36",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/36.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/36.avif",
+    "title": "Mt. Index peeking through the clouds",
+    "alt": "Mt. Index peeking through the clouds",
+    "tags": ["travel"],
+    "section": "travel"
   }
 ]
