@@ -340,5 +340,32 @@
     "alt": "Among giants in the Hoh Rainforest",
     "tags": ["nature", "travel"],
     "section": "travel"
+  },
+  {
+    "id": "39",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/39.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/39.avif",
+    "title": "Quintessential Kyoto",
+    "alt": "Quintessential Kyoto",
+    "tags": ["travel"],
+    "section": "travel"
+  },
+  {
+    "id": "40",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/40.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/40.avif",
+    "title": "Ceremonious Kyoto",
+    "alt": "Ceremonious Kyoto",
+    "tags": ["travel"],
+    "section": "travel"
+  },
+  {
+    "id": "41",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/41.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/41.avif",
+    "title": "Cruising in style along El Malecón in Havana",
+    "alt": "Cruising in style along El Malecón in Havana",
+    "tags": ["travel"],
+    "section": "travel"
   }
 ]
