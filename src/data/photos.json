@@ -106,5 +106,41 @@
     "alt": "Blue hour settling in",
     "tags": ["life", "landscapes"],
     "section": "life"
+  },
+  {
+    "id": "13",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.jpeg",
+    "title": "High key photo of a bald eagle",
+    "alt": "High key photo of a bald eagle",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "14",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.jpeg",
+    "title": "A chicadee peeking out from behind a tree",
+    "alt": "A chicadee peeking out from behind a tree",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "15",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.jpeg",
+    "title": "Gardens by the Bay from a different angle",
+    "alt": "Gardens by the Bay from a different angle",
+    "tags": ["travel"],
+    "section": "travel"
+  },
+  {
+    "id": "16",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.jpeg",
+    "title": "Swinging into the sunset",
+    "alt": "Swinging into the sunset",
+    "tags": ["travel"],
+    "section": "travel"
   }
 ]
