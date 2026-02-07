@@ -331,5 +331,14 @@
     "alt": "Silouhette of a great blue heron at sunset",
     "tags": ["birds", "nature"],
     "section": "nature"
+  },
+  {
+    "id": "38",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/38.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/38.avif",
+    "title": "Among giants in the Hoh Rainforest",
+    "alt": "Among giants in the Hoh Rainforest",
+    "tags": ["nature", "travel"],
+    "section": "travel"
   }
 ]
