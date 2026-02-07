@@ -15,8 +15,8 @@ const tabs = [
           class:list={[
             "section-tab cursor-pointer rounded-full border-0 px-5 py-2 text-xs font-medium tracking-widest uppercase transition-colors",
             tab.id === "all"
-              ? "bg-accent text-bg"
-              : "bg-transparent text-muted hover:text-text",
+              ? "border border-accent text-accent"
+              : "border border-transparent text-muted hover:text-text",
           ]}
           data-tab={tab.id}
           type="button"
@@ -37,9 +37,9 @@ const tabs = [
     function setActiveTab(activeId: string) {
       tabs.forEach((tab) => {
         const isActive = tab.dataset.tab === activeId;
-        tab.classList.toggle("bg-accent", isActive);
-        tab.classList.toggle("text-bg", isActive);
-        tab.classList.toggle("bg-transparent", !isActive);
+        tab.classList.toggle("border-accent", isActive);
+        tab.classList.toggle("text-accent", isActive);
+        tab.classList.toggle("border-transparent", !isActive);
         tab.classList.toggle("text-muted", !isActive);
         tab.classList.toggle("hover:text-text", !isActive);
       });
