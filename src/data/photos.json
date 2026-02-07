@@ -187,5 +187,86 @@
     "alt": "Colors of La Boca, Buenos Aires",
     "tags": ["travel"],
     "section": "travel"
+  },
+  {
+    "id": "22",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/22.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/22.avif",
+    "title": "Hikers in the snow",
+    "alt": "Hikers in the snow",
+    "tags": ["landscapes", "travel"],
+    "section": "travel"
+  },
+  {
+    "id": "23",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/23.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/23.avif",
+    "title": "Swiss Alps in the summer",
+    "alt": "Swiss Alps in the summer",
+    "tags": ["landscapes", "travel"],
+    "section": "travel"
+  },
+  {
+    "id": "24",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/24.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/24.avif",
+    "title": "A little junco perched on a branch",
+    "alt": "A little junco perched on a branch",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "25",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/25.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/25.avif",
+    "title": "Indigo bunting in a meadow",
+    "alt": "Indigo bunting in a meadow",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "26",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/26.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/26.avif",
+    "title": "White-breasted nuthatch ready to take flight",
+    "alt": "White-breasted nuthatch ready to take flight",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "27",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/27.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/27.avif",
+    "title": "Silouhette of a white-breasted nuthatch",
+    "alt": "Silouhette of a white-breasted nuthatch",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "28",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/28.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/28.avif",
+    "title": "Majestic red-belled woodpecker perched on a tree",
+    "alt": "Majestic red-belled woodpecker perched on a tree",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "29",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/29.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/29.avif",
+    "title": "A fluffy pine warbler perched on a branch",
+    "alt": "A fluffy pine warbler perched on a branch",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "30",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/30.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/30.avif",
+    "title": "A great blue heron catching dinner",
+    "alt": "A great blue heron catching dinner",
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife" 
   }
 ]
