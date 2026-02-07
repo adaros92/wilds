@@ -41,6 +41,7 @@ const tabs = [
         tab.classList.toggle("text-bg", isActive);
         tab.classList.toggle("bg-transparent", !isActive);
         tab.classList.toggle("text-muted", !isActive);
+        tab.classList.toggle("hover:text-text", !isActive);
       });
 
       items.forEach((item) => {
