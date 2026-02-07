@@ -97,5 +97,14 @@
     "alt": "The Palouse in late summer",
     "tags": ["landscapes", "travel"],
     "section": "travel"
+  },
+  {
+    "id": "12",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.jpeg",
+    "title": "Blue hour settling in",
+    "alt": "Blue hour settling in",
+    "tags": ["life", "landscapes"],
+    "section": "life"
   }
 ]
