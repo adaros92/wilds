@@ -1,2 +1,4 @@
 # wilds
-I take pictures of birds and nature stuff every now and then
+Personal website where I mostly showcase my photos. 
+
+https://www.adamsrosales.com/

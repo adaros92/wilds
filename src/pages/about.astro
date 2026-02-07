@@ -1,0 +1,35 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Adams Rosales — About">
+  <Header />
+  <main class="mx-auto max-w-[700px] px-6 py-8 md:py-12">
+    <div class="mb-8 flex justify-center">
+      <img
+        src="https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/self.jpeg"
+        alt="Adams Rosales"
+        class="h-72 w-72 rounded-full object-cover"
+      />
+    </div>
+    <div class="space-y-6 text-base leading-relaxed text-muted">
+      <p>
+        Hi, I'm Adams! 
+      </p>
+      <p>
+        My interests span nature and travel photography, and I shoot everything you see here myself.
+        No AI generated content, just real moments through a real lens.
+      </p>
+      <p>
+        When I'm not behind the camera, you can find me hunting, fishing, cooking, or out in the garden.
+        By day I work as a software engineer specializing in challenging data problems.
+      </p>
+      <p>
+        Thanks for stopping by.
+      </p>
+    </div>
+  </main>
+  <Footer />
+</Layout>

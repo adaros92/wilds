@@ -1,9 +1,29 @@
 ---
+const currentPath = Astro.url.pathname;
 ---
 
 <header class="mx-auto max-w-[1400px] px-6 py-8 text-center md:py-12">
   <h1 class="text-3xl font-bold tracking-[0.25em] uppercase text-text md:text-4xl">
-    Adams Rosales
+    <a href="/" class="text-text no-underline">Adams Rosales</a>
   </h1>
-  <p class="mt-2 text-sm tracking-widest uppercase text-muted">Photography</p>
+  <nav class="mt-3 flex items-center justify-center gap-6">
+    <a
+      href="/"
+      class:list={[
+        "text-sm tracking-widest uppercase transition-colors",
+        currentPath === "/" ? "text-text" : "text-muted hover:text-text",
+      ]}
+    >
+      Photography
+    </a>
+    <a
+      href="/about"
+      class:list={[
+        "text-sm tracking-widest uppercase transition-colors",
+        currentPath === "/about/" || currentPath === "/about" ? "text-text" : "text-muted hover:text-text",
+      ]}
+    >
+      About
+    </a>
+  </nav>
 </header>
