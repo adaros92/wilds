@@ -151,5 +151,41 @@
     "alt": "My dogs Pepper and Daisy doing what they do best",
     "tags": ["life", "dogs"],
     "section": "life"
+  },
+  {
+    "id": "18",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/18.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/18.avif",
+    "title": "The Palouse at sunset",
+    "alt": "The Palouse at sunset",
+    "tags": ["landscapes", "travel"],
+    "section": "travel"
+  },
+  {
+    "id": "19",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/19.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/19.avif",
+    "title": "Flying over the forests around the Grand Canyon",
+    "alt": "Flying over the forests around the Grand Canyon",
+    "tags": ["travel"],
+    "section": "travel"
+  },
+  {
+    "id": "20",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/20.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/20.avif",
+    "title": "Monkey getting caught red handed in Lombok",
+    "alt": "Monkey getting caught red handed in Lombok",
+    "tags": ["travel"],
+    "section": "travel"
+  },
+  {
+    "id": "21",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/21.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/21.avif",
+    "title": "Colors of La Boca, Buenos Aires",
+    "alt": "Colors of La Boca, Buenos Aires",
+    "tags": ["travel"],
+    "section": "travel"
   }
 ]
