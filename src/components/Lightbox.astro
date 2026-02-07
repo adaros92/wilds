@@ -129,6 +129,21 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       }
     });
 
+    // Trackpad swipe navigation (Mac)
+    let swiping = false;
+
+    lightbox.addEventListener("wheel", (e) => {
+      if (lightbox.classList.contains("hidden")) return;
+      e.preventDefault();
+      if (swiping) return;
+      if (Math.abs(e.deltaX) > 30) {
+        swiping = true;
+        if (e.deltaX > 0) nextPhoto();
+        else prevPhoto();
+        setTimeout(() => { swiping = false; }, 400);
+      }
+    }, { passive: false });
+
     // Keyboard navigation
     document.addEventListener("keydown", (e) => {
       if (lightbox.classList.contains("hidden")) return;
