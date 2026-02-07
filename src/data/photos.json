@@ -322,5 +322,14 @@
     "alt": "Mt. Index peeking through the clouds",
     "tags": ["travel"],
     "section": "travel"
+  },
+  {
+    "id": "37",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/37.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/37.avif",
+    "title": "Silouhette of a great blue heron at sunset",
+    "alt": "Silouhette of a great blue heron at sunset",
+    "tags": ["birds", "nature"],
+    "section": "nature"
   }
 ]
