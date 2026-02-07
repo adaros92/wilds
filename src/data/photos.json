@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.avif",
     "title": "My dog Daisy playing in the snow",
     "alt": "My dog Daisy playing in the snow",
     "tags": ["dogs"],
@@ -10,8 +10,8 @@
   },
   {
     "id": "2",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.avif",
     "title": "A great blue standing by the water",
     "alt": "A great blue heron",
     "tags": ["birds", "wildlife"],
@@ -19,8 +19,8 @@
   },
   {
     "id": "3",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.avif",
     "title": "A curious cardinal looking through the pine needles",
     "alt": "A curious cardinal looking through the pine needles",
     "tags": ["birds", "wildlife"],
@@ -28,8 +28,8 @@
   },
   {
     "id": "4",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.avif",
     "title": "Snow geese in the Skagit Valley",
     "alt": "Snow geese in the Skagit Valley",
     "tags": ["birds", "wildlife"],
@@ -37,8 +37,8 @@
   },
   {
     "id": "5",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/5.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/5.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/5.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/5.avif",
     "title": "A titmouse perched on a branch",
     "alt": "A titmouse perched on a branch",
     "tags": ["birds", "wildlife"],
@@ -46,8 +46,8 @@
   },
   {
     "id": "6",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/6.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/6.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/6.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/6.avif",
     "title": "Harrier coming in hot",
     "alt": "Harrier coming in hot",
     "tags": ["birds", "wildlife"],
@@ -55,8 +55,8 @@
   },
   {
     "id": "7",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/7.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/7.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/7.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/7.avif",
     "title": "Moody pine warbler on a branch",
     "alt": "Moody pine warbler on a branch",
     "tags": ["birds", "wildlife"],
@@ -64,8 +64,8 @@
   },
   {
     "id": "8",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/8.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/8.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/8.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/8.avif",
     "title": "A downy woodpecker climbing up a tree",
     "alt": "A downy woodpecker climbing up a tree",
     "tags": ["birds", "wildlife"],
@@ -73,8 +73,8 @@
   },
   {
     "id": "9",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.avif",
     "title": "Overshadowed by Mount Rinjani",
     "alt": "Overshadowed by Mount Rinjani",
     "tags": ["landscapes", "travel"],
@@ -82,8 +82,8 @@
   },
   {
     "id": "10",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.avif",
     "title": "Mt. Shuksan at sunset from Artist Point",
     "alt": "Mt. Shuksan at sunset from Artist Point",
     "tags": ["landscapes", "travel"],
@@ -91,8 +91,8 @@
   },
   {
     "id": "11",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.avif",
     "title": "The Palouse in late summer",
     "alt": "The Palouse in late summer",
     "tags": ["landscapes", "travel"],
@@ -100,8 +100,8 @@
   },
   {
     "id": "12",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.avif",
     "title": "Blue hour settling in",
     "alt": "Blue hour settling in",
     "tags": ["life", "landscapes"],
@@ -109,8 +109,8 @@
   },
   {
     "id": "13",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.avif",
     "title": "High key photo of a bald eagle",
     "alt": "High key photo of a bald eagle",
     "tags": ["birds", "wildlife"],
@@ -118,8 +118,8 @@
   },
   {
     "id": "14",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.avif",
     "title": "A chicadee peeking out from behind a tree",
     "alt": "A chicadee peeking out from behind a tree",
     "tags": ["birds", "wildlife"],
@@ -127,8 +127,8 @@
   },
   {
     "id": "15",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.avif",
     "title": "Gardens by the Bay from a different angle",
     "alt": "Gardens by the Bay from a different angle",
     "tags": ["travel"],
@@ -136,11 +136,20 @@
   },
   {
     "id": "16",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.jpeg",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.jpeg",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.avif",
     "title": "Swinging into the sunset",
     "alt": "Swinging into the sunset",
     "tags": ["travel"],
     "section": "travel"
+  },
+  {
+    "id": "17",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/17.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/17.avif",
+    "title": "My dogs Pepper and Daisy doing what they do best",
+    "alt": "My dogs Pepper and Daisy doing what they do best",
+    "tags": ["life", "dogs"],
+    "section": "life"
   }
 ]
