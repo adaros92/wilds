@@ -112,6 +112,23 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       }
     });
 
+    // Swipe navigation (mobile)
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    lightbox.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    lightbox.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) nextPhoto();
+        else prevPhoto();
+      }
+    });
+
     // Keyboard navigation
     document.addEventListener("keydown", (e) => {
       if (lightbox.classList.contains("hidden")) return;
