@@ -5,7 +5,8 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.jpeg",
     "title": "My dog Daisy playing in the snow",
     "alt": "My dog Daisy playing in the snow",
-    "tags": ["dogs"]
+    "tags": ["dogs"],
+    "section": "life"
   },
   {
     "id": "2",
@@ -13,7 +14,8 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.jpeg",
     "title": "A great blue standing by the water",
     "alt": "A great blue heron",
-    "tags": ["birds", "wildlife"]
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
   },
   {
     "id": "3",
@@ -21,7 +23,8 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.jpeg",
     "title": "A curious cardinal looking through the pine needles",
     "alt": "A curious cardinal looking through the pine needles",
-    "tags": ["birds", "wildlife"]
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
   },
   {
     "id": "4",
@@ -29,7 +32,8 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.jpeg",
     "title": "Snow geese in the Skagit Valley",
     "alt": "Snow geese in the Skagit Valley",
-    "tags": ["birds", "wildlife"]
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
   },
   {
     "id": "5",
@@ -37,7 +41,8 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/5.jpeg",
     "title": "A titmouse perched on a branch",
     "alt": "A titmouse perched on a branch",
-    "tags": ["birds", "wildlife"]
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
   },
   {
     "id": "6",
@@ -45,7 +50,8 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/6.jpeg",
     "title": "Harrier coming in hot",
     "alt": "Harrier coming in hot",
-    "tags": ["birds", "wildlife"]
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
   },
   {
     "id": "7",
@@ -53,7 +59,8 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/7.jpeg",
     "title": "Moody pine warbler on a branch",
     "alt": "Moody pine warbler on a branch",
-    "tags": ["birds", "wildlife"]
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
   },
   {
     "id": "8",
@@ -61,6 +68,34 @@
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/8.jpeg",
     "title": "A downy woodpecker climbing up a tree",
     "alt": "A downy woodpecker climbing up a tree",
-    "tags": ["birds", "wildlife"]
+    "tags": ["birds", "wildlife"],
+    "section": "wildlife"
+  },
+  {
+    "id": "9",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.jpeg",
+    "title": "Overshadowed by Mount Rinjani",
+    "alt": "Overshadowed by Mount Rinjani",
+    "tags": ["landscapes", "travel"],
+    "section": "travel"
+  },
+  {
+    "id": "10",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.jpeg",
+    "title": "Mt. Shuksan at sunset from Artist Point",
+    "alt": "Mt. Shuksan at sunset from Artist Point",
+    "tags": ["landscapes", "travel"],
+    "section": "travel"
+  },
+  {
+    "id": "11",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.jpeg",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.jpeg",
+    "title": "The Palouse in late summer",
+    "alt": "The Palouse in late summer",
+    "tags": ["landscapes", "travel"],
+    "section": "travel"
   }
 ]

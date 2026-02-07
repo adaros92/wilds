@@ -1,0 +1,59 @@
+---
+const tabs = [
+  { id: "all", label: "All" },
+  { id: "wildlife", label: "Wildlife" },
+  { id: "travel", label: "Travel" },
+  { id: "life", label: "Life" },
+];
+---
+
+<nav class="mx-auto max-w-[1400px] px-6 pb-6" aria-label="Photo sections">
+  <div class="flex items-center justify-center gap-1">
+    {
+      tabs.map((tab) => (
+        <button
+          class:list={[
+            "section-tab cursor-pointer rounded-full border-0 px-5 py-2 text-xs font-medium tracking-widest uppercase transition-colors",
+            tab.id === "all"
+              ? "bg-accent text-bg"
+              : "bg-transparent text-muted hover:text-text",
+          ]}
+          data-tab={tab.id}
+          type="button"
+        >
+          {tab.label}
+        </button>
+      ))
+    }
+  </div>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const tabs = document.querySelectorAll<HTMLButtonElement>(".section-tab");
+    const items =
+      document.querySelectorAll<HTMLButtonElement>(".photo-grid-item");
+
+    function setActiveTab(activeId: string) {
+      tabs.forEach((tab) => {
+        const isActive = tab.dataset.tab === activeId;
+        tab.classList.toggle("bg-accent", isActive);
+        tab.classList.toggle("text-bg", isActive);
+        tab.classList.toggle("bg-transparent", !isActive);
+        tab.classList.toggle("text-muted", !isActive);
+      });
+
+      items.forEach((item) => {
+        const section = item.dataset.section;
+        const visible = activeId === "all" || section === activeId;
+        item.classList.toggle("hidden", !visible);
+      });
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        setActiveTab(tab.dataset.tab!);
+      });
+    });
+  });
+</script>

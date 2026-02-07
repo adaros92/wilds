@@ -64,6 +64,17 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
 
     let currentIndex = 0;
 
+    function getVisibleIndices() {
+      const items = document.querySelectorAll("[data-lightbox-trigger]");
+      const indices = [];
+      items.forEach((item) => {
+        if (!item.classList.contains("hidden")) {
+          indices.push(parseInt(item.dataset.index, 10));
+        }
+      });
+      return indices;
+    }
+
     function showPhoto(index) {
       currentIndex = index;
       const photo = photos[index];
@@ -86,11 +97,19 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
     }
 
     function nextPhoto() {
-      showPhoto((currentIndex + 1) % photos.length);
+      const visible = getVisibleIndices();
+      if (visible.length === 0) return;
+      const pos = visible.indexOf(currentIndex);
+      const nextPos = (pos + 1) % visible.length;
+      showPhoto(visible[nextPos]);
     }
 
     function prevPhoto() {
-      showPhoto((currentIndex - 1 + photos.length) % photos.length);
+      const visible = getVisibleIndices();
+      if (visible.length === 0) return;
+      const pos = visible.indexOf(currentIndex);
+      const prevPos = (pos - 1 + visible.length) % visible.length;
+      showPhoto(visible[prevPos]);
     }
 
     // Trigger buttons
