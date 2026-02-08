@@ -385,5 +385,14 @@
     "alt": "Mt. Baker from Orcas Island",
     "tags": ["travel", "landscapes"],
     "section": "travel"
+  },
+  {
+    "id": "44",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/44.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/44.avif",
+    "title": "A house in Mykonos",
+    "alt": "A house in Mykonos",
+    "tags": ["travel"],
+    "section": "travel"
   }
 ]
