@@ -376,5 +376,14 @@
     "alt": "Taking the ferry over",
     "tags": ["travel"],
     "section": "travel"
+  },
+  {
+    "id": "43",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/43.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/43.avif",
+    "title": "Mt. Baker from Orcas Island",
+    "alt": "Mt. Baker from Orcas Island",
+    "tags": ["travel", "landscapes"],
+    "section": "travel"
   }
 ]
