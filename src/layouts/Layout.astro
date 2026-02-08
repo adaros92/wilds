@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { ViewTransitions } from "astro:transitions";
 
 interface Props {
   title?: string;
@@ -35,6 +36,7 @@ const { title = "Adams Rosales — Photography" } = Astro.props;
     </noscript>
     <link rel="canonical" href={Astro.url.href} />
     <title>{title}</title>
+    <ViewTransitions />
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",

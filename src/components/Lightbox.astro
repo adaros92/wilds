@@ -54,7 +54,7 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
 </div>
 
 <script define:vars={{ photos }}>
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("astro:page-load", () => {
     const lightbox = document.getElementById("lightbox");
     const lightboxImg = document.getElementById("lightbox-img");
     const lightboxTitle = document.getElementById("lightbox-title");

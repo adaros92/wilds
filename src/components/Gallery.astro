@@ -21,7 +21,7 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
 </section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  document.addEventListener("astro:page-load", () => {
     const grid = document.querySelector(".photo-grid");
     if (!grid) return;
     const items = [...grid.children];
