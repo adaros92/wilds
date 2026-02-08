@@ -394,5 +394,14 @@
     "alt": "A house in Mykonos",
     "tags": ["travel"],
     "section": "travel"
+  },
+  {
+    "id": "45",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/45.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/45.avif",
+    "title": "Vineyards in Mendoza, Argentina",
+    "alt": "Vineyards in Mendoza, Argentina",
+    "tags": ["travel", "landscapes"],
+    "section": "travel"
   }
 ]
