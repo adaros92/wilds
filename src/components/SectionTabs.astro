@@ -44,10 +44,12 @@ const tabs = [
         tab.classList.toggle("hover:text-text", !isActive);
       });
 
-      items.forEach((item) => {
-        const section = item.dataset.section;
-        const visible = activeId === "all" || section === activeId;
-        item.classList.toggle("hidden", !visible);
+      requestAnimationFrame(() => {
+        items.forEach((item) => {
+          const section = item.dataset.section;
+          const visible = activeId === "all" || section === activeId;
+          item.classList.toggle("hidden", !visible);
+        });
       });
     }
 
