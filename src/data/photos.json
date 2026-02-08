@@ -367,5 +367,14 @@
     "alt": "Cruising in style along El Malecón in Havana",
     "tags": ["travel"],
     "section": "travel"
+  },
+  {
+    "id": "42",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/42.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/42.avif",
+    "title": "Taking the ferry over",
+    "alt": "Taking the ferry over",
+    "tags": ["travel"],
+    "section": "travel"
   }
 ]
