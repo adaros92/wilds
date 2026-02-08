@@ -6,6 +6,7 @@ export default defineConfig({
   site: "https://www.adamsrosales.com",
   output: "static",
   integrations: [sitemap()],
+  prefetch: true,
   vite: {
     plugins: [tailwindcss()],
   },
