@@ -403,5 +403,23 @@
     "alt": "Vineyards in Mendoza, Argentina",
     "tags": ["travel", "landscapes"],
     "section": "travel"
+  },
+  {
+    "id": "46",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/46.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/46.avif",
+    "title": "Flying over South Lake Union during the pandemic",
+    "alt": "Flying over South Lake Union during the pandemic",
+    "tags": ["travel", "life"],
+    "section": "life"
+  },
+  {
+    "id": "47",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/47.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/47.avif",
+    "title": "Seattle from a float plane",
+    "alt": "Seattle from a float plane",
+    "tags": ["travel", "life"],
+    "section": "life"
   }
 ]
