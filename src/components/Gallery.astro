@@ -25,12 +25,21 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
     const grid = document.querySelector(".photo-grid");
     if (!grid) return;
     const items = [...grid.children];
-    for (let i = items.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [items[i], items[j]] = [items[j], items[i]];
+    const count = items.length;
+
+    let order = JSON.parse(sessionStorage.getItem("shuffleOrder") || "null");
+
+    if (!order || order.length !== count) {
+      order = Array.from({ length: count }, (_, i) => i);
+      for (let i = count - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [order[i], order[j]] = [order[j], order[i]];
+      }
+      sessionStorage.setItem("shuffleOrder", JSON.stringify(order));
     }
+
     const fragment = document.createDocumentFragment();
-    items.forEach((item) => fragment.appendChild(item));
+    order.forEach((i) => fragment.appendChild(items[i]));
     grid.appendChild(fragment);
   });
 </script>
