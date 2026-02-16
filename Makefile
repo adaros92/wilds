@@ -1,4 +1,4 @@
-.PHONY: dev build preview install
+.PHONY: dev build preview install to-avif
 
 install:
 	npm install
@@ -11,3 +11,6 @@ build:
 
 preview:
 	npm run preview
+
+to-avif:
+	node scripts/to-avif.mjs ~/Desktop ~/Desktop

@@ -421,5 +421,14 @@
     "alt": "Seattle from a float plane",
     "tags": ["travel", "life"],
     "section": "life"
+  },
+  {
+    "id": "48",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/48.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/48.avif",
+    "title": "A fig leaf highway",
+    "alt": "A fig leaf highway",
+    "tags": ["nature"],
+    "section": "nature"
   }
 ]
