@@ -3,7 +3,7 @@ const currentPath = Astro.url.pathname;
 ---
 
 <header class="mx-auto max-w-[1400px] px-6 py-8 text-center md:py-12">
-  <h1 class="font-[Cormorant_Garamond] text-4xl font-light tracking-[0.25em] uppercase text-text md:text-5xl">
+  <h1 class="font-[Cormorant_Garamond] text-5xl font-light tracking-[0.25em] uppercase text-text md:text-6xl">
     <a href="/" class="text-text no-underline">Adams Rosales</a>
   </h1>
   <div class="mx-auto mt-4 h-px w-10 bg-muted/40"></div>
@@ -11,7 +11,7 @@ const currentPath = Astro.url.pathname;
     <a
       href="/"
       class:list={[
-        "text-sm tracking-widest uppercase transition-colors",
+        "text-base tracking-widest uppercase transition-colors",
         currentPath === "/" ? "text-text" : "text-muted hover:text-text",
       ]}
     >
@@ -20,7 +20,7 @@ const currentPath = Astro.url.pathname;
     <a
       href="/about"
       class:list={[
-        "text-sm tracking-widest uppercase transition-colors",
+        "text-base tracking-widest uppercase transition-colors",
         currentPath === "/about/" || currentPath === "/about" ? "text-text" : "text-muted hover:text-text",
       ]}
     >
