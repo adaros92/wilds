@@ -4,18 +4,21 @@ interface Props {
   alt: string;
   index: number;
   section: string;
+  width: number;
+  height: number;
 }
 
-const { thumbnail, alt, index, section } = Astro.props;
+const { thumbnail, alt, index, section, width, height } = Astro.props;
+const isPortrait = height > width;
 ---
 
 <button
-  class="photo-grid-item cursor-pointer border-0 bg-transparent p-0 outline-none"
+  class:list={["photo-grid-item cursor-pointer border-0 bg-transparent p-0 outline-none", { "photo-grid-item--portrait": isPortrait }]}
   data-lightbox-trigger
   data-index={index}
   data-section={section}
   type="button"
   aria-label={alt}
 >
-  <img src={thumbnail} alt={alt} loading="lazy" decoding="async" width="400" height="400" />
+  <img src={thumbnail} alt={alt} loading="lazy" decoding="async" width={width} height={height} />
 </button>

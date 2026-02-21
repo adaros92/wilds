@@ -2,433 +2,696 @@
   {
     "id": "1",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/1.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/1.avif",
     "title": "My dog Daisy playing in the snow",
     "alt": "My dog Daisy playing in the snow",
-    "tags": ["dogs"],
-    "section": "life"
+    "tags": [
+      "dogs"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "2",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/2.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/2.avif",
     "title": "A great blue standing by the water",
     "alt": "A great blue heron",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 1006
   },
   {
     "id": "3",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/3.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/3.avif",
     "title": "A curious cardinal looking through the pine needles",
     "alt": "A curious cardinal looking through the pine needles",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "4",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/4.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/4.avif",
     "title": "Snow geese in the Skagit Valley",
     "alt": "Snow geese in the Skagit Valley",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 800
   },
   {
     "id": "5",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/5.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/5.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/5.avif",
     "title": "A titmouse perched on a branch",
     "alt": "A titmouse perched on a branch",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "6",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/6.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/6.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/6.avif",
     "title": "Harrier coming in hot",
     "alt": "Harrier coming in hot",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 1032
   },
   {
     "id": "7",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/7.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/7.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/7.avif",
     "title": "Moody pine warbler on a branch",
     "alt": "Moody pine warbler on a branch",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "8",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/8.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/8.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/8.avif",
     "title": "A downy woodpecker climbing up a tree",
     "alt": "A downy woodpecker climbing up a tree",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "9",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/9.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/9.avif",
     "title": "Overshadowed by Mount Rinjani",
     "alt": "Overshadowed by Mount Rinjani",
-    "tags": ["landscapes", "travel"],
-    "section": "travel"
+    "tags": [
+      "landscapes",
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 960
   },
   {
     "id": "10",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/10.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/10.avif",
     "title": "Mt. Shuksan at sunset from Artist Point",
     "alt": "Mt. Shuksan at sunset from Artist Point",
-    "tags": ["landscapes", "travel"],
-    "section": "travel"
+    "tags": [
+      "landscapes",
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "11",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/11.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/11.avif",
     "title": "The Palouse in late summer",
     "alt": "The Palouse in late summer",
-    "tags": ["landscapes", "travel"],
-    "section": "travel"
+    "tags": [
+      "landscapes",
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 960
   },
   {
     "id": "12",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/12.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/12.avif",
     "title": "Blue hour settling in",
     "alt": "Blue hour settling in",
-    "tags": ["life", "landscapes"],
-    "section": "life"
+    "tags": [
+      "life",
+      "landscapes"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "13",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/13.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/13.avif",
     "title": "High key photo of a bald eagle",
     "alt": "High key photo of a bald eagle",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "14",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/14.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/14.avif",
     "title": "A chicadee peeking out from behind a tree",
     "alt": "A chicadee peeking out from behind a tree",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 986
   },
   {
     "id": "15",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/15.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/15.avif",
     "title": "Gardens by the Bay from a different angle",
     "alt": "Gardens by the Bay from a different angle",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 784
   },
   {
     "id": "16",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/16.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/16.avif",
     "title": "Swinging into the sunset",
     "alt": "Swinging into the sunset",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 960
   },
   {
     "id": "17",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/17.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/17.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/17.avif",
     "title": "My dogs Pepper and Daisy doing what they do best",
     "alt": "My dogs Pepper and Daisy doing what they do best",
-    "tags": ["life", "dogs"],
-    "section": "life"
+    "tags": [
+      "life",
+      "dogs"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "18",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/18.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/18.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/18.avif",
     "title": "The Palouse at sunset",
     "alt": "The Palouse at sunset",
-    "tags": ["landscapes", "travel"],
-    "section": "travel"
+    "tags": [
+      "landscapes",
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "19",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/19.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/19.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/19.avif",
     "title": "Flying over the forests around the Grand Canyon",
     "alt": "Flying over the forests around the Grand Canyon",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "20",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/20.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/20.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/20.avif",
     "title": "Monkey getting caught red handed in Lombok",
     "alt": "Monkey getting caught red handed in Lombok",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 960
   },
   {
     "id": "21",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/21.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/21.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/21.avif",
     "title": "Colors of La Boca, Buenos Aires",
     "alt": "Colors of La Boca, Buenos Aires",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "22",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/22.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/22.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/22.avif",
     "title": "Hikers in the snow",
     "alt": "Hikers in the snow",
-    "tags": ["landscapes", "travel"],
-    "section": "travel"
+    "tags": [
+      "landscapes",
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "23",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/23.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/23.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/23.avif",
     "title": "Swiss Alps in the summer",
     "alt": "Swiss Alps in the summer",
-    "tags": ["landscapes", "travel"],
-    "section": "travel"
+    "tags": [
+      "landscapes",
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "24",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/24.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/24.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/24.avif",
     "title": "A little junco perched on a branch",
     "alt": "A little junco perched on a branch",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 900
   },
   {
     "id": "25",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/25.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/25.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/25.avif",
     "title": "Indigo bunting in a meadow",
     "alt": "Indigo bunting in a meadow",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 928
   },
   {
     "id": "26",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/26.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/26.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/26.avif",
     "title": "White-breasted nuthatch ready to take flight",
     "alt": "White-breasted nuthatch ready to take flight",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "27",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/27.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/27.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/27.avif",
     "title": "Silouhette of a white-breasted nuthatch",
     "alt": "Silouhette of a white-breasted nuthatch",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 837
   },
   {
     "id": "28",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/28.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/28.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/28.avif",
     "title": "Majestic red-bellied woodpecker perched on a tree",
     "alt": "Majestic red-bellied woodpecker perched on a tree",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "29",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/29.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/29.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/29.avif",
     "title": "A fluffy pine warbler perched on a branch",
     "alt": "A fluffy pine warbler perched on a branch",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "30",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/30.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/30.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/30.avif",
     "title": "A great blue heron catching dinner",
     "alt": "A great blue heron catching dinner",
-    "tags": ["birds", "nature"],
-    "section": "nature" 
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "31",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/31.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/31.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/31.avif",
     "title": "Japanese Zero at the Monroe warbird airshow",
     "alt": "Japanese Zero at the Monroe warbird airshow",
-    "tags": ["planes"],
-    "section": "life"
+    "tags": [
+      "planes"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "32",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/32.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/32.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/32.avif",
     "title": "A little gnatcatcher looking for its next meal",
     "alt": "A little gnatcatcher looking for its next meal",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "33",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/33.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/33.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/33.avif",
     "title": "Singapore roses in bloom",
     "alt": "Singapore roses in bloom",
-    "tags": ["flowers", "nature"],
-    "section": "nature"
+    "tags": [
+      "flowers",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 800
   },
   {
     "id": "34",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/34.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/34.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/34.avif",
     "title": "The Puget Sound at twilight",
     "alt": "The Puget Sound at twilight",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 960
   },
   {
     "id": "35",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/35.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/35.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/35.avif",
     "title": "Fall on the Snoqualmie River",
     "alt": "Fall on the Snoqualmie River",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "36",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/36.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/36.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/36.avif",
     "title": "Mt. Index peeking through the clouds",
     "alt": "Mt. Index peeking through the clouds",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "37",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/37.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/37.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/37.avif",
     "title": "Silouhette of a great blue heron at sunset",
     "alt": "Silouhette of a great blue heron at sunset",
-    "tags": ["birds", "nature"],
-    "section": "nature"
+    "tags": [
+      "birds",
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "38",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/38.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/38.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/38.avif",
     "title": "Among giants in the Hoh Rainforest",
     "alt": "Among giants in the Hoh Rainforest",
-    "tags": ["nature", "travel"],
-    "section": "travel"
+    "tags": [
+      "nature",
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "39",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/39.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/39.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/39.avif",
     "title": "Quintessential Kyoto",
     "alt": "Quintessential Kyoto",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 808
   },
   {
     "id": "40",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/40.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/40.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/40.avif",
     "title": "Ceremonious Kyoto",
     "alt": "Ceremonious Kyoto",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 800
   },
   {
     "id": "41",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/41.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/41.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/41.avif",
     "title": "Cruising in style along El Malecón in Havana",
     "alt": "Cruising in style along El Malecón in Havana",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 800
   },
   {
     "id": "42",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/42.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/42.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/42.avif",
     "title": "Taking the ferry over",
     "alt": "Taking the ferry over",
-    "tags": ["life"],
-    "section": "life"
+    "tags": [
+      "life"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 741
   },
   {
     "id": "43",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/43.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/43.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/43.avif",
     "title": "Mt. Baker from Orcas Island",
     "alt": "Mt. Baker from Orcas Island",
-    "tags": ["travel", "landscapes"],
-    "section": "travel"
+    "tags": [
+      "travel",
+      "landscapes"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "44",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/44.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/44.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/44.avif",
     "title": "A house in Mykonos",
     "alt": "A house in Mykonos",
-    "tags": ["travel"],
-    "section": "travel"
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 748
   },
   {
     "id": "45",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/45.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/45.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/45.avif",
     "title": "Vineyards in Mendoza, Argentina",
     "alt": "Vineyards in Mendoza, Argentina",
-    "tags": ["travel", "landscapes"],
-    "section": "travel"
+    "tags": [
+      "travel",
+      "landscapes"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 927
   },
   {
     "id": "46",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/46.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/46.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/46.avif",
     "title": "Flying over South Lake Union during the pandemic",
     "alt": "Flying over South Lake Union during the pandemic",
-    "tags": ["travel", "life"],
-    "section": "life"
+    "tags": [
+      "travel",
+      "life"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "47",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/47.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/47.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/47.avif",
     "title": "Seattle from a float plane",
     "alt": "Seattle from a float plane",
-    "tags": ["travel", "life"],
-    "section": "life"
+    "tags": [
+      "travel",
+      "life"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 857
   },
   {
     "id": "48",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/48.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/thumbs/48.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/48.avif",
     "title": "A fig leaf highway",
     "alt": "A fig leaf highway",
-    "tags": ["nature"],
-    "section": "nature"
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 857
+  },
+  {
+    "id": "49",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/49.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/49.avif",
+    "title": "A single henbit deadnettle flower",
+    "alt": "A single henbit deadnettle flower",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 857,
+    "height": 1200
+  },
+  {
+    "id": "50",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/50.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/50.avif",
+    "title": "Flowers from an apple tree emerging from dormancy",
+    "alt": "Flowers from an apple tree emerging from dormancy",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 746,
+    "height": 1200
+  },
+  {
+    "id": "51",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/51.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/51.avif",
+    "title": "A group of henbit deadnettle flowers",
+    "alt": "A group of henbit deadnettle flowers",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
   }
 ]

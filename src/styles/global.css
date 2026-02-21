@@ -30,7 +30,7 @@ body {
 /* Photo grid */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 3px;
   max-width: 1400px;
   margin: 0 auto;
@@ -38,19 +38,13 @@ body {
 
 @media (min-width: 640px) {
   .photo-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
   .photo-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-@media (min-width: 1536px) {
-  .photo-grid {
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -58,6 +52,15 @@ body {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+}
+
+.photo-grid-item--portrait {
+  grid-row: span 2;
+  aspect-ratio: auto;
+}
+
+.photo-grid-item--portrait img {
+  object-fit: cover;
 }
 
 .photo-grid-item img {
