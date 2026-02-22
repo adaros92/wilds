@@ -719,5 +719,18 @@
     "section": "travel",
     "width": 857,
     "height": 1200
+  },
+  {
+    "id": "54",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/54.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/54.avif",
+    "title": "Fall in the Cascades",
+    "alt": "Fall in the Cascades",
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 857,
+    "height": 1200
   }
 ]
