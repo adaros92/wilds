@@ -37,13 +37,25 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
         const j = Math.floor(Math.random() * (i + 1));
         [order[i], order[j]] = [order[j], order[i]];
       }
-      // Separate consecutive portrait images
       const isPortrait = (idx) =>
         items[idx]?.classList.contains("photo-grid-item--portrait");
 
+      // Move portrait images out of the last 3 positions (bottom row)
+      const cols = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+      for (let i = order.length - cols; i < order.length; i++) {
+        if (isPortrait(order[i])) {
+          for (let j = 0; j < order.length - cols; j++) {
+            if (!isPortrait(order[j])) {
+              [order[i], order[j]] = [order[j], order[i]];
+              break;
+            }
+          }
+        }
+      }
+
+      // Separate consecutive portrait images
       for (let i = 0; i < order.length - 1; i++) {
         if (isPortrait(order[i]) && isPortrait(order[i + 1])) {
-          // Find the next non-portrait to swap with
           for (let j = i + 2; j < order.length; j++) {
             if (!isPortrait(order[j])) {
               [order[i + 1], order[j]] = [order[j], order[i + 1]];
