@@ -11,7 +11,7 @@ export function GET(context) {
     items: sorted.map((photo) => ({
       title: photo.title,
       description: photo.alt,
-      link: `/photos/${photo.id}/`,
+      link: photo.src,
       enclosure: {
         url: photo.src,
         length: 0,
