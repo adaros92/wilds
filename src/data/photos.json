@@ -732,5 +732,19 @@
     "section": "travel",
     "width": 857,
     "height": 1200
+  },
+  {
+    "id": "55",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/55.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/55.avif",
+    "title": "Departing ferry",
+    "alt": "Departing ferry",
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 857,
+    "height": 1200
   }
+
 ]

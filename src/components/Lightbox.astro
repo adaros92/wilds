@@ -75,25 +75,58 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       return indices;
     }
 
+    function preloadAdjacent() {
+      const visible = getVisibleIndices();
+      if (visible.length === 0) return;
+      const pos = visible.indexOf(currentIndex);
+      const nextIdx = visible[(pos + 1) % visible.length];
+      const prevIdx = visible[(pos - 1 + visible.length) % visible.length];
+      new Image().src = photos[nextIdx].src;
+      new Image().src = photos[prevIdx].src;
+    }
+
     function showPhoto(index) {
       currentIndex = index;
       const photo = photos[index];
       lightboxImg.src = photo.src;
       lightboxImg.alt = photo.alt;
       lightboxTitle.textContent = photo.title;
+      preloadAdjacent();
+    }
+
+    const focusableSelector = 'button:not([disabled])';
+    let previousFocus = null;
+
+    function trapFocus(e) {
+      const focusable = lightbox.querySelectorAll(focusableSelector);
+      if (focusable.length === 0) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
     }
 
     function openLightbox(index) {
+      previousFocus = document.activeElement;
       showPhoto(index);
       lightbox.classList.remove("hidden");
       lightbox.classList.add("flex");
       document.body.style.overflow = "hidden";
+      closeBtn.focus();
+      document.addEventListener("keydown", trapFocus);
     }
 
     function closeLightbox() {
       lightbox.classList.add("hidden");
       lightbox.classList.remove("flex");
       document.body.style.overflow = "";
+      document.removeEventListener("keydown", trapFocus);
+      if (previousFocus) previousFocus.focus();
     }
 
     function nextPhoto() {

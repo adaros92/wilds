@@ -1,0 +1,21 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Page Not Found — Adams Rosales">
+  <Header />
+  <main class="flex flex-col items-center justify-center px-6 text-center" style="min-height:40vh">
+    <h2 class="font-[Cormorant_Garamond] font-light leading-none text-text" style="font-size:clamp(4rem, 10vw, 8rem)">404</h2>
+    <p class="tracking-wide text-muted" style="font-size:clamp(1.5rem, 3vw, 2.5rem); margin-top:2rem">This page doesn't exist.</p>
+    <a
+      href="/"
+      class="inline-block tracking-widest uppercase text-muted transition-colors hover:text-text"
+      style="font-size:1.25rem; margin-top:3rem; margin-bottom:6rem"
+    >
+      Back to photos
+    </a>
+  </main>
+  <Footer />
+</Layout>
