@@ -693,5 +693,18 @@
     "section": "nature",
     "width": 1200,
     "height": 960
+  },
+  {
+    "id": "52",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/52.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/52.avif",
+    "title": "Mt. Shuksan in a different light",
+    "alt": "Mt. Shuksan in a different light",
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 857,
+    "height": 1200
   }
 ]
