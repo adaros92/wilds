@@ -37,6 +37,22 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
         const j = Math.floor(Math.random() * (i + 1));
         [order[i], order[j]] = [order[j], order[i]];
       }
+      // Separate consecutive portrait images
+      const isPortrait = (idx) =>
+        items[idx]?.classList.contains("photo-grid-item--portrait");
+
+      for (let i = 0; i < order.length - 1; i++) {
+        if (isPortrait(order[i]) && isPortrait(order[i + 1])) {
+          // Find the next non-portrait to swap with
+          for (let j = i + 2; j < order.length; j++) {
+            if (!isPortrait(order[j])) {
+              [order[i + 1], order[j]] = [order[j], order[i + 1]];
+              break;
+            }
+          }
+        }
+      }
+
       sessionStorage.setItem("shuffleOrder", JSON.stringify(order));
     }
 
