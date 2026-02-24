@@ -656,19 +656,6 @@
     "height": 857
   },
   {
-    "id": "49",
-    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/49.avif",
-    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/49.avif",
-    "title": "A single henbit deadnettle flower",
-    "alt": "A single henbit deadnettle flower",
-    "tags": [
-      "nature"
-    ],
-    "section": "nature",
-    "width": 857,
-    "height": 1200
-  },
-  {
     "id": "50",
     "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/50.avif",
     "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/50.avif",
@@ -744,7 +731,7 @@
     ],
     "section": "travel",
     "width": 857,
-    "height": 1200
+    "height": 1200 
   }
 
 ]
