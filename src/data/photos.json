@@ -810,6 +810,18 @@
     "section": "travel",
     "width": 857,
     "height": 1200 
+  },
+  {
+    "id": "63",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/63.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/63.avif",
+    "title": "Paddle boarders in Lake Washington",
+    "alt": "Paddle boarders in Lake Washington",
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 857,
+    "height": 1200 
   }
-
 ]
