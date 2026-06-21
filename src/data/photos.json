@@ -784,6 +784,32 @@
     "section": "nature",
     "width": 1200,
     "height": 960
+  },
+  {
+    "id": "61",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/61.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/61.avif",
+    "title": "Moonrise over Eastern Washington",
+    "alt": "Moonrise over Eastern Washington",
+    "tags": [
+      "life"
+    ],
+    "section": "life",
+    "width": 857,
+    "height": 1200 
+  },
+  {
+    "id": "62",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/62.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/62.avif",
+    "title": "Hikers in the Swiss Alps",
+    "alt": "Hikers in the Swiss Alps",
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 857,
+    "height": 1200 
   }
 
 ]
