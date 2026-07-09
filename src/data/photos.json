@@ -849,5 +849,31 @@
     "section": "nature",
     "width": 1200,
     "height": 960
+  },
+  {
+    "id": "66",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/66.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/66.avif",
+    "title": "Low tide leisure",
+    "alt": "Low tide leisure",
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 960
+  },
+  {
+    "id": "67",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/67.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/67.avif",
+    "title": "Sand dunes",
+    "alt": "Sand dunes",
+    "tags": [
+      "travel"
+    ],
+    "section": "travel",
+    "width": 1200,
+    "height": 960
   }
 ]
