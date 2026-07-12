@@ -10,10 +10,11 @@ interface Props {
 
 const { thumbnail, alt, index, section, width, height } = Astro.props;
 const isPortrait = height > width;
+const isWide = width / height >= 1.6;
 ---
 
 <button
-  class:list={["photo-grid-item cursor-pointer border-0 bg-transparent p-0 outline-none", { "photo-grid-item--portrait": isPortrait }]}
+  class:list={["photo-grid-item cursor-pointer border-0 bg-transparent p-0 outline-none", { "photo-grid-item--portrait": isPortrait, "photo-grid-item--wide": isWide }]}
   data-lightbox-trigger
   data-index={index}
   data-section={section}
