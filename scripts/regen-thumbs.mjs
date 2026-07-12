@@ -6,7 +6,7 @@ import { dirname, join } from "path";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const photosPath = join(__dirname, "..", "src", "data", "photos.json");
 const outDir = join("/Users/adamsrosales/Desktop", "wilds-thumbs");
-const thumbSize = parseInt(process.argv[2] || "1200", 10);
+const thumbSize = process.argv[2] ? parseInt(process.argv[2], 10) : null;
 const quality = parseInt(process.argv[3] || "60", 10);
 
 await mkdir(outDir, { recursive: true });
@@ -21,10 +21,11 @@ for (const photo of photos) {
   }
 
   const buffer = Buffer.from(await res.arrayBuffer());
-  const thumb = await sharp(buffer)
-    .resize({ width: thumbSize, height: thumbSize, fit: "inside" })
-    .avif({ quality })
-    .toFile(join(outDir, `${photo.id}.avif`));
+  let pipeline = sharp(buffer);
+  if (thumbSize) {
+    pipeline = pipeline.resize({ width: thumbSize, height: thumbSize, fit: "inside" });
+  }
+  const thumb = await pipeline.avif({ quality }).toFile(join(outDir, `${photo.id}.avif`));
 
   // Update dimensions in photos.json
   photo.width = thumb.width;

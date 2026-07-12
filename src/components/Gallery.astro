@@ -16,6 +16,7 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
           section={photo.section}
           width={photo.width}
           height={photo.height}
+          wide={photo.wide}
         />
       ))
     }

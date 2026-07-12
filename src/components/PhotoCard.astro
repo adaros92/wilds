@@ -6,11 +6,12 @@ interface Props {
   section: string;
   width: number;
   height: number;
+  wide?: boolean;
 }
 
-const { thumbnail, alt, index, section, width, height } = Astro.props;
+const { thumbnail, alt, index, section, width, height, wide } = Astro.props;
 const isPortrait = height > width;
-const isWide = width / height >= 1.6;
+const isWide = Boolean(wide);
 ---
 
 <button
