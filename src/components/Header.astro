@@ -18,6 +18,15 @@ const currentPath = Astro.url.pathname;
       Photography
     </a>
     <a
+      href="/blog"
+      class:list={[
+        "text-base tracking-widest uppercase transition-colors",
+        currentPath.startsWith("/blog") ? "text-text" : "text-muted hover:text-text",
+      ]}
+    >
+      Blog
+    </a>
+    <a
       href="/about"
       class:list={[
         "text-base tracking-widest uppercase transition-colors",

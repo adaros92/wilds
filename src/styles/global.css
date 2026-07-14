@@ -83,3 +83,90 @@ body {
   transform: scale(1.05);
   opacity: 0.85;
 }
+
+/* Blog post content */
+.prose-blog h2,
+.prose-blog h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.prose-blog h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+}
+
+.prose-blog h3 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.prose-blog p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.prose-blog a {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--color-muted);
+}
+
+.prose-blog a:hover {
+  color: var(--color-accent);
+}
+
+.prose-blog img {
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.prose-blog figure {
+  margin: 2rem 0;
+}
+
+.prose-blog figure img {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.prose-blog figcaption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.prose-blog blockquote {
+  margin: 2rem 0;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(136, 136, 136, 0.4);
+  font-style: italic;
+  color: var(--color-muted);
+}
+
+.prose-blog ul,
+.prose-blog ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.prose-blog li {
+  margin-top: 0.5rem;
+}
+
+.prose-blog code {
+  font-size: 0.9em;
+  background-color: rgba(136, 136, 136, 0.15);
+  padding: 0.15em 0.4em;
+  border-radius: 3px;
+}
