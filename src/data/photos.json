@@ -928,5 +928,31 @@
     "section": "life",
     "width": 1200,
     "height": 960
+  },
+  {
+    "id": "72",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/72.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/72.avif",
+    "title": "White and blue",
+    "alt": "White and blue",
+    "tags": [
+      "life"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 960
+  },
+  {
+    "id": "73",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/73.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/73.avif",
+    "title": "Up in lights",
+    "alt": "Up in lights",
+    "tags": [
+      "life"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 960
   }
 ]
