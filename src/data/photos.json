@@ -954,5 +954,18 @@
     "section": "life",
     "width": 1200,
     "height": 960
+  },
+  {
+    "id": "74",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/74.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/74.avif",
+    "title": "Dragonfly by my pond",
+    "alt": "Dragonfly by my pond",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
   }
 ]
