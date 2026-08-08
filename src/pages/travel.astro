@@ -1,0 +1,105 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+// Raw inline SVG world map. Each country/territory is a <path> with an ISO
+// 3166-1 alpha-2 lowercase id and a <title> (shown as a hover tooltip).
+// Source: @svg-maps/world.
+import worldMap from "../assets/world-map.svg?raw";
+
+// Countries I've visited. Add a { code, name } here and it colors in automatically.
+const visited = [
+  // North & Central America, Caribbean
+  { code: "us", name: "United States" },
+  { code: "ca", name: "Canada" },
+  { code: "mx", name: "Mexico" },
+  { code: "pa", name: "Panama" },
+  { code: "cu", name: "Cuba" },
+  { code: "jm", name: "Jamaica" },
+  { code: "ky", name: "Cayman Islands" },
+  { code: "ht", name: "Haiti" },
+  { code: "do", name: "Dominican Republic" },
+  { code: "pr", name: "Puerto Rico" },
+  { code: "vi", name: "U.S. Virgin Islands" },
+  { code: "sx", name: "Sint Maarten" },
+  { code: "bb", name: "Barbados" },
+  { code: "tt", name: "Trinidad and Tobago" },
+  // South America
+  { code: "ve", name: "Venezuela" },
+  { code: "gf", name: "French Guiana" },
+  { code: "gy", name: "Guyana" },
+  { code: "sr", name: "Suriname" },
+  { code: "pe", name: "Peru" },
+  { code: "ar", name: "Argentina" },
+  // Europe
+  { code: "gb", name: "United Kingdom" },
+  { code: "ie", name: "Ireland" },
+  { code: "fr", name: "France" },
+  { code: "mc", name: "Monaco" },
+  { code: "es", name: "Spain" },
+  { code: "it", name: "Italy" },
+  { code: "ch", name: "Switzerland" },
+  { code: "at", name: "Austria" },
+  { code: "cz", name: "Czechia" },
+  { code: "sk", name: "Slovakia" },
+  { code: "hu", name: "Hungary" },
+  { code: "me", name: "Montenegro" },
+  { code: "gr", name: "Greece" },
+  // Asia
+  { code: "sg", name: "Singapore" },
+  { code: "id", name: "Indonesia" },
+  { code: "jp", name: "Japan" },
+];
+
+const visitedNames = [...visited].sort((a, b) => a.name.localeCompare(b.name));
+
+// Tag each visited country's <path> with a `visited` class so a single static
+// stylesheet can color it.
+let map = worldMap;
+for (const { code } of visited) {
+  map = map.replace(`id="${code}"`, `id="${code}" class="visited"`);
+}
+---
+
+<Layout title="Adams Rosales — Travel Map">
+  <Header />
+  <main class="mx-auto max-w-[1000px] px-6 py-8 md:py-12">
+    <div class="mb-8 text-center">
+      <h2 class="font-[Cormorant_Garamond] text-4xl font-light tracking-wide text-text md:text-5xl">
+        Travel Map
+      </h2>
+      <div class="mx-auto mt-4 h-px w-10 bg-muted/40"></div>
+      <p class="mt-4 text-sm tracking-widest uppercase text-muted">
+        {visited.length} {visited.length === 1 ? "place" : "places"} and counting
+      </p>
+    </div>
+
+    <div class="travel-map" set:html={map} />
+
+    <ul class="mt-10 flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm tracking-widest uppercase text-muted">
+      {visitedNames.map(({ name }) => <li>{name}</li>)}
+    </ul>
+  </main>
+  <Footer />
+</Layout>
+
+<style is:global>
+  .travel-map svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Default: unvisited land */
+  .travel-map svg path {
+    fill: #1e1e1e;
+    stroke: #0a0a0a;
+    stroke-width: 0.3;
+    transition: fill 0.3s ease;
+  }
+
+  /* Visited countries (class injected at build time) */
+  .travel-map svg path.visited {
+    fill: var(--color-accent);
+  }
+</style>

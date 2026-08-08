@@ -27,6 +27,15 @@ const currentPath = Astro.url.pathname;
       Blog
     </a>
     <a
+      href="/travel"
+      class:list={[
+        "text-base tracking-widest uppercase transition-colors",
+        currentPath === "/travel/" || currentPath === "/travel" ? "text-text" : "text-muted hover:text-text",
+      ]}
+    >
+      Travel Map
+    </a>
+    <a
       href="/about"
       class:list={[
         "text-base tracking-widest uppercase transition-colors",
