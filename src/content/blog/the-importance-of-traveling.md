@@ -3,7 +3,7 @@ title: "The Importance of Traveling"
 description: ""
 date: 2026-08-08
 coverImage: "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/guyana4.avif"
-coverImageAlt: "Sitting by Kaieteur Falls in Guayana"
+coverImageAlt: "Sitting by Kaieteur Falls in Guyana"
 tags: []
 draft: false
 ---
