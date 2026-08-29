@@ -980,5 +980,57 @@
     "section": "nature",
     "width": 857,
     "height": 1200
+  },
+  {
+    "id": "76",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/76.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/76.avif",
+    "title": "Lily pads",
+    "alt": "Lily pads",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
+  },
+  {
+    "id": "77",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/77.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/77.avif",
+    "title": "Eastern swallowtail",
+    "alt": "Eastern swallowtail",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
+  },
+  {
+    "id": "78",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/78.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/78.avif",
+    "title": "Day lily",
+    "alt": "Day lily",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
+  },
+  {
+    "id": "79",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/79.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/79.avif",
+    "title": "Day lily petal",
+    "alt": "Day lily petal",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
   }
 ]
