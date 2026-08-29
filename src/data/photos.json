@@ -1032,5 +1032,18 @@
     "section": "nature",
     "width": 1200,
     "height": 960
+  },
+  {
+    "id": "80",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/80.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/80.avif",
+    "title": "Pitcher plant up close",
+    "alt": "Pitcher plant up close",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
   }
 ]
