@@ -1045,5 +1045,46 @@
     "section": "nature",
     "width": 1200,
     "height": 960
+  },
+  {
+    "id": "81",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/81.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/81.avif",
+    "title": "Falls Lake",
+    "alt": "Falls Lake",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 3000,
+    "height": 1688,
+    "wide": true
+  },
+  {
+    "id": "82",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/82.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/82.avif",
+    "title": "Moonrise over the Piedmont",
+    "alt": "Moonrise over the Piedmont",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 3000,
+    "height": 1688,
+    "wide": true
+  },
+  {
+    "id": "83",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/83.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/83.avif",
+    "title": "Juvenile bald eagle",
+    "alt": "Juvenile bald eagle",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 857,
+    "height": 1200
   }
 ]
