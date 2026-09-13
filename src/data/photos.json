@@ -1086,5 +1086,18 @@
     "section": "nature",
     "width": 857,
     "height": 1200
+  },
+  {
+    "id": "84",
+    "src": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/84.avif",
+    "thumbnail": "https://pub-953ed6a419e44ac7adb24e23fcf72b84.r2.dev/84.avif",
+    "title": "Green lynx spider on a sunflower",
+    "alt": "Green lynx spider on a sunflower",
+    "tags": [
+      "nature"
+    ],
+    "section": "nature",
+    "width": 1200,
+    "height": 960
   }
 ]
