@@ -6,7 +6,7 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
 ---
 
 <section>
-  <div class="photo-grid" style="visibility:hidden">
+  <div class="photo-grid">
     {
       photos.map((photo, index) => (
         <PhotoCard
@@ -23,55 +23,90 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
   </div>
 </section>
 
-<script>
-  document.addEventListener("astro:page-load", () => {
-    const grid = document.querySelector(".photo-grid");
-    if (!grid) return;
-    const items = [...grid.children];
-    const count = items.length;
+<script is:inline>
+  // Runs inline, immediately after the grid markup is parsed, so the shuffle
+  // lands before first layout and paint. The grid is never hidden, and the
+  // browser's lazy-load picks its initial batch from the final order.
+  (function () {
+    function shuffleGrid() {
+      const grid = document.querySelector(".photo-grid");
+      if (!grid || grid.dataset.shuffled === "true") return;
+      grid.dataset.shuffled = "true";
 
-    let order = JSON.parse(sessionStorage.getItem("shuffleOrder") || "null");
+      const items = [...grid.children];
+      const count = items.length;
+      if (count === 0) return;
 
-    if (!order || order.length !== count) {
-      order = Array.from({ length: count }, (_, i) => i);
-      for (let i = count - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [order[i], order[j]] = [order[j], order[i]];
+      let order = null;
+      try {
+        order = JSON.parse(sessionStorage.getItem("shuffleOrder") || "null");
+      } catch {
+        order = null;
       }
-      const isPortrait = (idx) =>
-        items[idx]?.classList.contains("photo-grid-item--portrait");
 
-      // Move portrait images out of the last 3 positions (bottom row)
-      const cols = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
-      for (let i = order.length - cols; i < order.length; i++) {
-        if (isPortrait(order[i])) {
-          for (let j = 0; j < order.length - cols; j++) {
-            if (!isPortrait(order[j])) {
-              [order[i], order[j]] = [order[j], order[i]];
-              break;
+      if (!order || order.length !== count) {
+        order = Array.from({ length: count }, (_, i) => i);
+        for (let i = count - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [order[i], order[j]] = [order[j], order[i]];
+        }
+        const isPortrait = (idx) =>
+          items[idx]?.classList.contains("photo-grid-item--portrait");
+
+        // Move portrait images out of the last 3 positions (bottom row)
+        const cols =
+          window.innerWidth >= 1024 ? 3 : window.innerWidth >= 640 ? 2 : 1;
+        for (let i = order.length - cols; i < order.length; i++) {
+          if (isPortrait(order[i])) {
+            for (let j = 0; j < order.length - cols; j++) {
+              if (!isPortrait(order[j])) {
+                [order[i], order[j]] = [order[j], order[i]];
+                break;
+              }
             }
           }
         }
-      }
 
-      // Separate consecutive portrait images
-      for (let i = 0; i < order.length - 1; i++) {
-        if (isPortrait(order[i]) && isPortrait(order[i + 1])) {
-          for (let j = i + 2; j < order.length; j++) {
-            if (!isPortrait(order[j])) {
-              [order[i + 1], order[j]] = [order[j], order[i + 1]];
-              break;
+        // Separate consecutive portrait images
+        for (let i = 0; i < order.length - 1; i++) {
+          if (isPortrait(order[i]) && isPortrait(order[i + 1])) {
+            for (let j = i + 2; j < order.length; j++) {
+              if (!isPortrait(order[j])) {
+                [order[i + 1], order[j]] = [order[j], order[i + 1]];
+                break;
+              }
             }
           }
         }
+
+        try {
+          sessionStorage.setItem("shuffleOrder", JSON.stringify(order));
+        } catch {
+          // sessionStorage unavailable (private mode) — order is still applied
+        }
       }
 
-      sessionStorage.setItem("shuffleOrder", JSON.stringify(order));
+      const fragment = document.createDocumentFragment();
+      order.forEach((i) => fragment.appendChild(items[i]));
+      grid.appendChild(fragment);
+
+      // Order is only known at runtime, so promote the real first row here
+      // rather than baking loading/fetchpriority into the build output.
+      const eager = window.innerWidth >= 1024 ? 6 : window.innerWidth >= 640 ? 4 : 2;
+      [...grid.children].slice(0, eager).forEach((item) => {
+        const img = item.querySelector("img");
+        if (!img) return;
+        img.loading = "eager";
+        img.fetchPriority = "high";
+      });
     }
 
-    const fragment = document.createDocumentFragment();
-    order.forEach((i) => fragment.appendChild(items[i]));
-    grid.appendChild(fragment);
-    grid.style.visibility = "";
-  });
+    shuffleGrid();
+
+    // View transitions swap in a fresh grid; re-shuffle before it paints.
+    if (!window.__wildsShuffleBound) {
+      window.__wildsShuffleBound = true;
+      document.addEventListener("astro:after-swap", shuffleGrid);
+    }
+  })();
 </script>

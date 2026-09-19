@@ -53,6 +53,9 @@ body {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
+  /* Skip rendering work for offscreen cells. Safe here because every cell's
+     geometry comes from the grid column plus aspect-ratio, not its contents. */
+  content-visibility: auto;
 }
 
 .photo-grid-item--portrait {

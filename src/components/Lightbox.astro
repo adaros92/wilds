@@ -75,15 +75,27 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       return indices;
     }
 
+    // These URLs serve full-resolution masters, so a preload is expensive.
+    // Fetch only the next one, only once, and only after the photo the viewer
+    // is actually looking at has finished — never in competition with it.
+    const preloaded = new Set();
+
     function preloadAdjacent() {
+      const conn = navigator.connection;
+      if (conn && (conn.saveData || /(^|-)2g$/.test(conn.effectiveType || ""))) return;
+
       const visible = getVisibleIndices();
-      if (visible.length === 0) return;
+      if (visible.length < 2) return;
       const pos = visible.indexOf(currentIndex);
+      if (pos === -1) return;
+
       const nextIdx = visible[(pos + 1) % visible.length];
-      const prevIdx = visible[(pos - 1 + visible.length) % visible.length];
+      if (nextIdx === currentIndex || preloaded.has(nextIdx)) return;
+      preloaded.add(nextIdx);
       new Image().src = photos[nextIdx].src;
-      new Image().src = photos[prevIdx].src;
     }
+
+    lightboxImg.addEventListener("load", preloadAdjacent);
 
     function showPhoto(index) {
       currentIndex = index;
@@ -91,7 +103,6 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       lightboxImg.src = photo.src;
       lightboxImg.alt = photo.alt;
       lightboxTitle.textContent = photo.title;
-      preloadAdjacent();
     }
 
     const focusableSelector = 'button:not([disabled])';

@@ -13,6 +13,9 @@ const photos = (await import("../data/photos.json")).default;
 const defaultOgPhoto = photos.find((p) => p.id === "11") ?? photos.at(-1);
 const defaultOgImage = defaultOgPhoto?.src.replace(/\.avif$/, ".jpg");
 
+// Every photo byte comes from this origin, so open the connection early.
+const imageOrigin = photos[0] ? new URL(photos[0].src).origin : null;
+
 const {
   title = "Adams Rosales — Photography",
   ogImage = defaultOgImage,
@@ -41,6 +44,8 @@ const {
     {ogImage && <meta name="twitter:image" content={ogImage} />}
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    {imageOrigin && <link rel="preconnect" href={imageOrigin} crossorigin />}
+    {imageOrigin && <link rel="dns-prefetch" href={imageOrigin} />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
