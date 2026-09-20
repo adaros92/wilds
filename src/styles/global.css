@@ -53,9 +53,8 @@ body {
   position: relative;
   aspect-ratio: 1 / 1;
   overflow: hidden;
-  /* Skip rendering work for offscreen cells. Safe here because every cell's
-     geometry comes from the grid column plus aspect-ratio, not its contents. */
-  content-visibility: auto;
+  /* Something to look at before the photo arrives, instead of page background. */
+  background-color: #141414;
 }
 
 .photo-grid-item--portrait {
@@ -80,6 +79,24 @@ body {
   object-fit: cover;
   display: block;
   transition: transform 0.5s ease, opacity 0.3s ease;
+}
+
+/* Fade photos in as they arrive rather than letting them snap in. Gated on
+   [data-enhanced], which the grid script sets, so that without JS the images
+   are simply visible and never stuck at opacity 0. */
+.photo-grid[data-enhanced] .photo-grid-item img {
+  opacity: 0;
+}
+
+.photo-grid[data-enhanced] .photo-grid-item img.is-loaded {
+  opacity: 1;
+}
+
+/* The first row is fetched eagerly and is the LCP candidate — fading it would
+   delay the largest paint, so it skips the transition entirely. */
+.photo-grid[data-enhanced] .photo-grid-item img.is-priority {
+  opacity: 1;
+  transition: transform 0.5s ease;
 }
 
 .photo-grid-item:hover img {

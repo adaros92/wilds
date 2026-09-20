@@ -90,15 +90,53 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       order.forEach((i) => fragment.appendChild(items[i]));
       grid.appendChild(fragment);
 
+      // Opt in to the fade. Set before paint so there is no flash of fully
+      // opaque images, and only ever with JS running to finish the job.
+      grid.dataset.enhanced = "true";
+
+      // Re-read after the shuffle; `items` above is the pre-shuffle order.
+      const ordered = [...grid.children];
+
       // Order is only known at runtime, so promote the real first row here
       // rather than baking loading/fetchpriority into the build output.
       const eager = window.innerWidth >= 1024 ? 6 : window.innerWidth >= 640 ? 4 : 2;
-      [...grid.children].slice(0, eager).forEach((item) => {
+      ordered.slice(0, eager).forEach((item) => {
         const img = item.querySelector("img");
         if (!img) return;
         img.loading = "eager";
         img.fetchPriority = "high";
+        img.classList.add("is-priority");
       });
+
+      const reveal = (img) => img.classList.add("is-loaded");
+      grid.querySelectorAll("img").forEach((img) => {
+        if (img.complete && img.naturalWidth > 0) {
+          reveal(img);
+          return;
+        }
+        img.addEventListener("load", () => reveal(img), { once: true });
+        // Never leave a broken image invisible.
+        img.addEventListener("error", () => reveal(img), { once: true });
+      });
+
+      // Native lazy-loading starts fetching only just before a cell scrolls in,
+      // which a fast phone scroll outruns — you watch the next photo appear.
+      // Flipping loading to "eager" ahead of time starts the fetch early while
+      // the markup still says lazy, so this degrades cleanly without JS.
+      if ("IntersectionObserver" in window) {
+        const io = new IntersectionObserver(
+          (entries) => {
+            for (const entry of entries) {
+              if (!entry.isIntersecting) continue;
+              const img = entry.target.querySelector("img");
+              if (img && img.loading === "lazy") img.loading = "eager";
+              io.unobserve(entry.target);
+            }
+          },
+          { rootMargin: "1500px 0px" }
+        );
+        ordered.forEach((item) => io.observe(item));
+      }
     }
 
     shuffleGrid();
