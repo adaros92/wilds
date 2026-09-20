@@ -168,28 +168,61 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
     nextBtn.addEventListener("click", nextPhoto);
     prevBtn.addEventListener("click", prevPhoto);
 
+    // True while the viewer has pinch-zoomed in. At that point one finger means
+    // "pan around the photo", so swipe navigation has to stand down.
+    function isZoomed() {
+      return (window.visualViewport?.scale ?? 1) > 1.01;
+    }
+
     // Click outside image to close
     lightbox.addEventListener("click", (e) => {
+      // A pan that ends on the backdrop also produces a click; don't close
+      // the lightbox out from under someone inspecting a zoomed photo.
+      if (isZoomed()) return;
       if (e.target === lightbox) {
         closeLightbox();
       }
     });
 
     // Swipe navigation (mobile)
+    const SWIPE_MIN_PX = 50;
+    const SWIPE_AXIS_RATIO = 1.5; // horizontal must clearly beat vertical
     let touchStartX = 0;
-    let touchEndX = 0;
+    let touchStartY = 0;
+    let swipeCancelled = false;
 
     lightbox.addEventListener("touchstart", (e) => {
+      // Two fingers down is a pinch, never a swipe.
+      if (e.touches.length > 1 || isZoomed()) {
+        swipeCancelled = true;
+        return;
+      }
+      swipeCancelled = false;
       touchStartX = e.changedTouches[0].screenX;
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    lightbox.addEventListener("touchmove", (e) => {
+      // A second finger can land after the gesture already started.
+      if (e.touches.length > 1 || isZoomed()) swipeCancelled = true;
     }, { passive: true });
 
     lightbox.addEventListener("touchend", (e) => {
-      touchEndX = e.changedTouches[0].screenX;
-      const diff = touchStartX - touchEndX;
-      if (Math.abs(diff) > 50) {
-        if (diff > 0) nextPhoto();
-        else prevPhoto();
-      }
+      // Wait for every finger to leave before judging the gesture, otherwise
+      // lifting the first finger of a pinch reads as a completed swipe.
+      if (e.touches.length > 0) return;
+
+      const cancelled = swipeCancelled;
+      swipeCancelled = false;
+      if (cancelled || isZoomed()) return;
+
+      const dx = touchStartX - e.changedTouches[0].screenX;
+      const dy = touchStartY - e.changedTouches[0].screenY;
+      if (Math.abs(dx) < SWIPE_MIN_PX) return;
+      if (Math.abs(dx) < Math.abs(dy) * SWIPE_AXIS_RATIO) return;
+
+      if (dx > 0) nextPhoto();
+      else prevPhoto();
     });
 
     // Trackpad swipe navigation (Mac)
@@ -197,8 +230,11 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
 
     lightbox.addEventListener("wheel", (e) => {
       if (lightbox.classList.contains("hidden")) return;
+      // Trackpad pinch and ctrl+scroll arrive as wheel events; those are zoom
+      // requests, so let the browser have them.
+      if (e.ctrlKey) return;
       e.preventDefault();
-      if (swiping) return;
+      if (swiping || isZoomed()) return;
       if (Math.abs(e.deltaX) > 30) {
         swiping = true;
         if (e.deltaX > 0) nextPhoto();
