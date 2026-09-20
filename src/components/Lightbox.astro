@@ -95,14 +95,57 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       new Image().src = photos[nextIdx].src;
     }
 
-    lightboxImg.addEventListener("load", preloadAdjacent);
+    // Assigning .src does not clear the element — it keeps painting the previous
+    // photo until the new one decodes. Masters take 300-950ms to decode, so that
+    // stale frame is plainly visible. Bridge with the thumbnail, which the grid
+    // has already downloaded and decoded, then swap once the master is ready.
+    // Bumped on every showPhoto so a slow master can never land on top of a
+    // photo the viewer has since navigated away from.
+    let showToken = 0;
 
     function showPhoto(index) {
       currentIndex = index;
       const photo = photos[index];
-      lightboxImg.src = photo.src;
+      const token = ++showToken;
+
       lightboxImg.alt = photo.alt;
       lightboxTitle.textContent = photo.title;
+
+      const master = new Image();
+      master.src = photo.src;
+
+      // Already in cache (revisited, or preloaded) — go straight to full res
+      // so there is no needless downgrade to the thumbnail and back.
+      if (master.complete && master.naturalWidth > 0) {
+        lightboxImg.src = photo.src;
+        preloadAdjacent();
+        return;
+      }
+
+      lightboxImg.src = photo.thumbnail;
+
+      const promote = () => {
+        if (token !== showToken) return; // viewer moved on
+        lightboxImg.src = photo.src;
+        preloadAdjacent();
+      };
+
+      // If the master cannot be shown, keep the thumbnail rather than swapping
+      // in something broken. iOS refuses to decode very large images — #83 is a
+      // 148 MP panorama — so this is a real path, not just defensive coding.
+      const keepThumbnail = () => {
+        if (token !== showToken) return;
+        preloadAdjacent();
+      };
+
+      // decode() resolves only once the bitmap is ready to paint, so the swap
+      // cannot itself cause a hitch. Fall back to onload where unsupported.
+      if (master.decode) {
+        master.decode().then(promote).catch(keepThumbnail);
+      } else {
+        master.onload = promote;
+        master.onerror = keepThumbnail;
+      }
     }
 
     const focusableSelector = 'button:not([disabled])';
@@ -122,22 +165,54 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       }
     }
 
+    // iOS Safari ignores `body { overflow: hidden }` and keeps scrolling the
+    // page behind a fixed overlay, so pin the body in place instead and put the
+    // scroll position back on close. touch-action isn't an option here — it
+    // would kill the pinch-zoom the lightbox depends on.
+    let savedScrollY = 0;
+
+    function lockScroll() {
+      savedScrollY = window.scrollY;
+      const { style } = document.body;
+      style.position = "fixed";
+      style.top = `-${savedScrollY}px`;
+      style.left = "0";
+      style.right = "0";
+      style.width = "100%";
+      style.overflow = "hidden";
+    }
+
+    function unlockScroll() {
+      const { style } = document.body;
+      style.position = "";
+      style.top = "";
+      style.left = "";
+      style.right = "";
+      style.width = "";
+      style.overflow = "";
+      window.scrollTo(0, savedScrollY);
+    }
+
     function openLightbox(index) {
       previousFocus = document.activeElement;
       showPhoto(index);
       lightbox.classList.remove("hidden");
       lightbox.classList.add("flex");
-      document.body.style.overflow = "hidden";
-      closeBtn.focus();
+      lockScroll();
+      // preventScroll: focusing normally scrolls the target into view, which
+      // would fight the scroll lock we just applied.
+      closeBtn.focus({ preventScroll: true });
       document.addEventListener("keydown", trapFocus);
     }
 
     function closeLightbox() {
       lightbox.classList.add("hidden");
       lightbox.classList.remove("flex");
-      document.body.style.overflow = "";
+      unlockScroll();
       document.removeEventListener("keydown", trapFocus);
-      if (previousFocus) previousFocus.focus();
+      // Same here, or returning focus to the grid button would override the
+      // scroll position unlockScroll just restored.
+      if (previousFocus) previousFocus.focus({ preventScroll: true });
     }
 
     function nextPhoto() {
@@ -235,7 +310,10 @@ const photos = [...rawPhotos].sort((a, b) => Number(b.id) - Number(a.id));
       if (e.ctrlKey) return;
       e.preventDefault();
       if (swiping || isZoomed()) return;
-      if (Math.abs(e.deltaX) > 30) {
+      // Trackpads emit horizontal jitter during a fast vertical scroll, so a
+      // raw deltaX threshold flips photos while you are just scrolling down.
+      // Require the horizontal component to clearly dominate, same as touch.
+      if (Math.abs(e.deltaX) > 30 && Math.abs(e.deltaX) > Math.abs(e.deltaY) * SWIPE_AXIS_RATIO) {
         swiping = true;
         if (e.deltaX > 0) nextPhoto();
         else prevPhoto();
