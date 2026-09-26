@@ -1138,5 +1138,18 @@
     "section": "nature",
     "width": 1200,
     "height": 960
+  },
+   {
+    "id": "88",
+    "src": "https://img.adamsrosales.com/88.avif",
+    "thumbnail": "https://img.adamsrosales.com/thumbs/88.avif",
+    "title": "Amphitheater",
+    "alt": "Amphitheater",
+    "tags": [
+      "life"
+    ],
+    "section": "life",
+    "width": 1200,
+    "height": 960
   }
 ]
